@@ -1,0 +1,33 @@
+<div>
+    <h2>Product List</h2>
+
+    <div *ngIf="!productList.length">
+        <p>No products available.</p>
+    </div>
+
+    <ul>
+        <li *ngFor="let product of productList">
+            <strong>{{ product.title }}</strong> - ${{ product.price }}
+            <p>{{ product.description }}</p>
+            <button (click)="deleteProduct(product.id)">Delete</button>
+        </li>
+    </ul>
+
+    <h3>Add New Product</h3>
+
+    <form (ngSubmit)="addProduct()">
+        <div>
+            <label for="title">Title:</label>
+            <input id="title" [(ngModel)]="newProduct.title" name="title" required>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" [(ngModel)]="newProduct.description" name="description" required></textarea>
+        </div>
+        <div>
+            <label for="price">Price:</label>
+            <input id="price" [(ngModel)]="newProduct.price" name="price" type="number" required>
+        </div>
+        <button type="submit">Add Product</button>
+    </form>
+</div>

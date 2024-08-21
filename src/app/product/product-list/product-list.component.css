@@ -1,0 +1,104 @@
+/* Container styling */
+div {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+h2 {
+	text-align: center;
+	color: #333;
+}
+
+/* No products message styling */
+div p {
+	text-align: center;
+	color: #888;
+}
+
+/* Product list styling */
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+	border-bottom: none;
+}
+
+/* Product title and price styling */
+strong {
+	color: #333;
+}
+
+li p {
+	color: #666;
+}
+
+/* Button styling */
+button {
+	background-color: #ff4d4d;
+	color: white;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ff1a1a;
+}
+
+/* Form styling */
+form {
+	margin-top: 20px;
+}
+
+form div {
+	margin-bottom: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #45a049;
+}
